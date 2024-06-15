@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팀당근이지 라이딩 지도</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="assets/images/crez.JPG" alt="Logo" class="logo">
+        <h1 class="title">팀당근이지 라이딩 지도</h1>
+        <img src="assets/images/icons8-menu-50-df763d.png" alt="Menu" class="menu-button" id="menu-button">
+    </div>
+    <div id="map-container">
+        <div id="map"></div>
+        <div id="route-list">
+            <p id="no-routes">생성된 경로가 없습니다.</p>
+        </div>
+    </div>
+    <div id="controls" class="menu-content">
+        <button id="start-route-creation">경로 생성 시작</button>
+        <button id="start-gpx-route-creation">GPX로 경로 생성 시작</button>
+        <button id="register-route" style="display: none;">경로 등록하기</button>
+        <button id="register-gpx-route" style="display: none;">GPX로 경로 등록하기</button>
+        <button id="cancel-route-creation" style="display: none;">경로 생성 취소</button>
+        <button id="cancel-gpx-route-creation" style="display: none;">GPX로 경로 생성 취소</button>
+        <button id="play-videos">유튜브 영상 재생</button>
+        <button id="export-routes" disabled>경로 목록 내보내기</button>
+    </div>
+    <footer>
+        &copy; 2024 베로녜(Barronie). <a href="https://icons8.com/" target="_blank">Icons by Icons8</a>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="app.js"></script>
+</body>
+</html>
