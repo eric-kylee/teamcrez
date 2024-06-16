@@ -10,7 +10,7 @@ let currentRoutePoints = [];
 let routeCreationMode = false;
 let gpxRouteCreationMode = false;
 
-const osrmUrl = 'http://router.project-osrm.org/route/v1/driving/';
+const osrmUrl = 'https://router.project-osrm.org/route/v1/driving/';
 const startIcon = L.icon({
     iconUrl: 'assets/images/icons8-go-64.png',//'https://leafletjs.com/examples/custom-icons/leaf-green.png',
     shadowUrl: null,//'https://leafletjs.com/examples/custom-icons/leaf-shadow.png',
